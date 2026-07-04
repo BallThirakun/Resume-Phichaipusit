@@ -5,76 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Phichaipusit Thirakun</title>
-    <!-- ลิงก์ไปยังไฟล์ CSS อันใหม่ -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="resume-container">
-        <!-- ส่วนหัว: ข้อมูลส่วนตัวและการติดต่อ -->
-        <header>
-            <div class="profile-info">
-                <h1>Phichaipusit Thirakun</h1>
-                <h2>Computer Engineering and Artificial Intelligence</h2>
-                <p>2nd Year Student at Walailak University</p>
-            </div>
-            <div class="contact-info">
-                <p>📧 phichaipusitt@gmail.com</p>
-                <p>📱 062-519-3080</p>
-                <p>📍 Nakhon Si Thammarat, Thailand</p>
-            </div>
-        </header>
 
-        <hr>
+    <div class="resume-wrapper">
 
-        <!-- ส่วนที่ 1: ทักษะความสามารถ -->
-        <section class="section">
-            <h3>🛠️ Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <p>Python, C, Java, HTML, CSS, JavaScript</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Hardware & Embedded Systems</h4>
-                    <p>ESP32 (ESP32-S3, ESP32-C3), Arduino, Fritzing, Circuit Canvas</p>
+        <!-- ================= คอลัมน์ซ้าย (Sidebar) ================= -->
+        <aside class="sidebar">
+
+            <!-- 1. รูปโปรไฟล์ -->
+            <div class="profile-section">
+                <img src="profile2.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+
+            <!-- 2. ข้อมูลติดต่อ -->
+            <div class="sidebar-block">
+                <h3 class="sidebar-title">Contact</h3>
+                <div class="contact-info">
+                    <p>📞 062-519-3080</p>
+                    <p>📧 phichaipusitt@gmail.com</p>
+                    <p>📍 Nakhon Si Thammarat</p>
                 </div>
             </div>
-        </section>
 
-        <!-- ส่วนที่ 2: โปรเจกต์ผลงาน -->
-        <section class="section">
-            <h3>🚀 Projects & Experience</h3>
-            <div class="experience-item">
-                <h4>ESP32-Based Physics Experiment Kit</h4>
-                <p>Designed and developed a digital motion tracking kit modeled after free-fall experiment equipment
-                    using an ESP32-S3 and an 8-channel relay module.</p>
+            <!-- 3. ทักษะความสามารถ -->
+            <div class="sidebar-block">
+                <h3 class="sidebar-title">Skills</h3>
+                <div class="skills-list">
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>Python, C, Java</li>
+                        <li>HTML, CSS, JavaScript</li>
+                    </ul>
+                    <h4>Hardware & Embedded</h4>
+                    <ul>
+                        <li>ESP32 (S3, C3)</li>
+                        <li>Arduino</li>
+                    </ul>
+                </div>
             </div>
-            <div class="experience-item">
-                <h4>Micro Drone Controller</h4>
-                <p>Built a custom micro drone utilizing an ESP32-C3 SuperMini controller, SI2302 MOSFETs, and coreless
-                    motors.</p>
-            </div>
-            <div class="experience-item">
-                <h4>DIY Solar-Powered System</h4>
-                <p>Assembled an off-grid solar-powered charging and lighting system using standard solar charge
-                    controllers and 12V DC components.</p>
-            </div>
-        </section>
 
-        <!-- ส่วนที่ 3: กิจกรรมและการแข่งขัน -->
-        <section class="section">
-            <h3>🏆 Activities & Competitions</h3>
-            <ul class="activities-list">
-                <li><strong>SuperAI Engineer Season 5:</strong> Participant in advanced technical talent development
-                    program for artificial intelligence.</li>
-                <li><strong>AI-Preneur Regional Hackathon:</strong> Developed AI prototypes and minimum viable products
-                    (Southern Region).</li>
-                <li><strong>I - New Gen Award 2026:</strong> Curriculum representative in the Thailand New Gen Inventors
-                    Award.</li>
-            </ul>
-        </section>
+            <!-- 4. การศึกษา -->
+            <div class="sidebar-block">
+                <h3 class="sidebar-title">Education</h3>
+                <div class="education-info">
+                    <p class="degree">2nd Year Student</p>
+                    <p class="major">Computer Engineering and Artificial Intelligence</p>
+                    <p class="uni">Walailak University</p>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ================= คอลัมน์ขวา (Main Content) ================= -->
+        <main class="main-content">
+
+            <!-- 5. ชื่อและตำแหน่ง -->
+            <header class="header">
+                <h1>Phichaipusit<br>Thirakun</h1>
+                <h2>Computer Engineering & AI Student</h2>
+
+            </header>
+
+            <!-- 6. ประวัติย่อ -->
+            <section class="content-block">
+                <h3 class="main-title">Profile</h3>
+                <p class="summary-text">
+                    A second-year Computer Engineering and AI student with a strong interest in smart embedded systems. 
+                    Passionate about bridging hardware and software to apply AI in real-world IoT solutions. 
+                    Always eager to learn new technologies and tackle engineering challenges.
+                </p>
+            </section>
+
+            <!-- 7. ประสบการณ์และโปรเจกต์ -->
+            <section class="content-block">
+                <h3 class="main-title">Projects & Experience</h3>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <h4>IoT Smart Farm Durian Watering System</h4>
+                    </div>
+                    <p>Developed an automated watering control system tailored for durian orchards to optimize
+                        agricultural water management.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <h4>Microcontroller-Based Control & Measurement Systems</h4>
+                    </div>
+                    <p>Utilized microcontrollers to interface with sensors, measure environmental parameters, and
+                        execute automated hardware control for IoT applications.</p>
+                </div>
+            </section>
+
+            <!-- 8. กิจกรรมและการแข่งขัน -->
+            <section class="content-block">
+                <h3 class="main-title">Activities & Competitions</h3>
+                <ul class="activities-list">
+                    <li><strong>NRCT National Innovation Competition:</strong> Participated in the national innovation
+                        contest hosted by the National Research Council of Thailand to present engineering solutions.
+                    </li>
+                    <li><strong>Thailand Innovation Awards (TIA):</strong> Competed in the national technological and
+                        engineering innovation platform to showcase newly developed prototypes.</li>
+                    <li><strong>I-New Gen Award (International Category):</strong> Showcased innovative projects at the
+                        international level of the Thailand New Gen Inventors Award organized by NRCT.</li>
+                </ul>
+            </section>
+
+        </main>
+
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
